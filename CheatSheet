@@ -1,0 +1,97 @@
+ssh-keygen	create a key
+
+		~~~~~~~~~~~~~~~~~~   Shell   ~~~~~~~~~~~~~~~~~~
+
+cd ~/.ssh	where the key is located
+ls		lists everyhing in a directory
+ls -l 		same but showing more info
+
+mkdir		create directory
+rmdir 		remove directory
+
+cd		change directory you're in the terminal
+rm 		remove a file
+mv 		move a file or rename one
+touch 		used to change a file timestamp
+touch -t	change the time/date to a specific one you input
+touch -h	used to change the symbolic file directly instead of the one he is tied to
+truncate -s	change size of a file 
+
+chmod		change permissions of a file (ugo +- rwx)
+
+ln		create a hardlink
+ln -s		create a symbolic link
+
+.gitignore 	file that is used by git to ignore whatever you want the git to, must be created
+		at the root of the repository and to edit the ignores do nano .git/files/exclude 
+		and add there what you want to ignore
+git add		add files to be commited
+git rm		remove files from git
+git commit	commit what you added to then push to the repository
+git push	push everything that was commited to the repository
+
+id 		print real users and groups names and ids(ex: id -nG FT_USER)
+		"cat /etc/group" shows a list of users/groups
+id -n		show the name of the user/group instead of id
+id -G		show the secondary groups of the user
+tr		delete or substitute characters for other characters
+
+#!/bin/sh	must be written on the beggining of every file that is executable
+
+export		export something to a variable for ex. export FT_USER=bocal will change the
+		current viewed user to bocal 
+unset		reset the values of variables and functions
+
+find 		find files/directories
+-exec		argument to execute specific thing for exemple if i add it to a find like so
+		(find . '.sh' -exec basename {} .sh \;) i will execute a find to search for 
+		files that have a .sh extension and for every file that I find the .sh will be
+		excluded from the print.
+wc -l		print newline counts for files/directories ex: find -type f,d | wc -l
+		find will search files(f) and directories(d) starting in its current 
+		directory and following subdirectories and wc -l will count and print a 
+		number showing the total of files/directories it was found
+		
+ifconfig	shows/changes info related to network connections
+grep		prints lines that match a specific condition ex: ifconfig | grep ether
+		ifconfig will search all info related to network and then grep will find all 
+		lines that are related to ether and print only then
+cut 		cuts  following specific direction "ex: cut -d ' ' -f10" cut will then follow 
+		direction(-d) to separate into collumns everything before (f'number') a empty
+		space(' ')
+		
+		if you want to create a file/directory that has special characters you need a 
+		'\' before each special character so linux will just read as a string
+		
+		~~~~~~~~~~~~~~~~~~   VIM   ~~~~~~~~~~~~~~~~~~
+		
+vim		shell editor 
+		i(insert) to start writing,
+		esc to leave insert mode
+		:w to save
+		:q to quit
+		:q! to force quit without saving
+		f1 to add header to .c file
+		
+		~~~~~~~~~~~~~~~~~~   C   ~~~~~~~~~~~~~~~~~~
+		
+#include <stdio.h>				library to use printf
+#include <unistd.h>				library that must be include in .c files
+cc  -Wall -Wextra -Werror			must be compiled using the WWW	
+norminette -R CheckForbiddenSourceHeader 	norme must be run like so
+
+int main(void){				
+	"whatever your program will do";	main function on a c program 
+	return(0);
+}	
+
+void function(void){}  structure of a function on c
+
+/* */ 		this is how to comment a section in c so everything in between is ignored
+
+while (variable ><= 'condition'){}	structure of a while function
+
+write (int fd, &variable, size);	int fd(file descriptor): 0=input, 1=output, 2=error
+write (1, &a, 1);	size: specifies size in bytes to be written 
+if(){} else if(){} else{}
+
