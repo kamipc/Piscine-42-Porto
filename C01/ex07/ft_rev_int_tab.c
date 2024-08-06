@@ -11,28 +11,27 @@
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <unistd.h>
+/*#include <unistd.h>*/
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int save_n;
-	int i;
-	int j;
+	int	save_n;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = size - 1;
 	while (i < j)
-	{   
+	{
 		save_n = tab[i];
 		tab[i] = tab[j];
 		tab[j] = save_n;
 		i++;
 		j--;
-
 	}
 }
 
-int main()
+/*int main()
 {
 	int numbers[] = {10, 5, 75, 220, 2};
 	int *ptrnbr = &numbers[0];
@@ -47,4 +46,4 @@ int main()
 	{
 		printf("%d, ", numbers[i]);
 	}
-}
+}*/
