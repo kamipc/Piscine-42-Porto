@@ -1,18 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cpinho-c <cpinho-c@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-08-06 14:32:11 by cpinho-c          #+#    #+#             */
-/*   Updated: 2024-08-06 14:32:11 by cpinho-c         ###   ########.fr       */
+/*   Created: 2024-08-06 16:31:10 by cpinho-c          #+#    #+#             */
+/*   Updated: 2024-08-06 16:31:10 by cpinho-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <stdio.h>
 
-int	ft_str_is_alpha(char *str)
+int	ft_str_is_uppercase(char *str)
 {
 	int	i;
 
@@ -21,8 +20,7 @@ int	ft_str_is_alpha(char *str)
 		return (1);
 	while (str[i] != '\0')
 	{
-		if ((str[i] >= 'A' && str[i] <= 'Z')
-			|| (str[i] >= 'a' && str[i] <= 'z'))
+		if (str[i] >= 'A' && str[i] <= 'Z')
 			i++;
 		else
 			return (0);
@@ -37,14 +35,14 @@ int	ft_str_is_alpha(char *str)
     char str3[] = "H3ll0 W0rld!";
     char str4[] = "1234567";
     char str5[] = "";
-	int n = ft_str_is_alpha(str);
+	int n = ft_str_is_uppercase(str);
 	printf("%d\n", n);
-	n = ft_str_is_alpha(str2);
+	n = ft_str_is_uppercase(str2);
 	printf("%d\n", n);
-    n = ft_str_is_alpha(str3);
+    n = ft_str_is_uppercase(str3);
     printf("%d\n", n);
-    n = ft_str_is_alpha(str4);
+    n = ft_str_is_uppercase(str4);
     printf("%d\n", n);
-    n = ft_str_is_alpha(str5);
+    n = ft_str_is_uppercase(str5);
     printf("%d\n", n);
 }*/
