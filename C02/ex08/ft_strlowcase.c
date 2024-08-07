@@ -18,9 +18,9 @@ char	*ft_strlowcase(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			str[i] -= 32;
+			str[i] += 32;
 			i++;
 		}
 		else
