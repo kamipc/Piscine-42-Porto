@@ -17,24 +17,26 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	unsigned int	i;
 
 	i = 0;
-	while (i < n)
+	while (i < n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
 
-/*int main()
+/*int main(void)
 {
-	char	src[] = "Hello World";
-    printf ("%s\n", src);
-	char	dest[11];
-    int n = 7;
-	char	*ptrsrc = &src[0];
-	char	*ptrdest = &dest[0];
-	ft_strncpy(ptrdest, ptrsrc, n);
-    printf ("%s", dest);
+	char	src[] = "Hello";
+    	printf ("%s\n", src);
+	char	dest[6] = {'a','a','a','a','a'};
+	int n = 3;
+	ft_strncpy(dest, src, n);
+	printf ("%s", dest);
 	return (0);
 }*/
