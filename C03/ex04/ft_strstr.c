@@ -18,27 +18,30 @@ char	*ft_strstr(char *str, char *to_find)
 	int	j;
 
 	i = 0;
-	j = 0;
-	while (str[i] != '\0' && to_find [j] != '\0')
+	if (to_find[0] == '\0')
 	{
-		if (str[i] == to_find[j])
+		return (&str[i]);
+	}
+	while (str[i] != '\0')
+	{
+		j = 0;
+		while (to_find[j] != '\0' && str[i + j] == to_find[j])
 		{
-			i++;
 			j++;
 		}
-		else
-			i++;
+		if (to_find[j] == '\0')
+			return (&str[i]);
+		i++;
 	}
-	i -= j;
-	return (&str[i]);
+	return (0);
 }
 
 /*int main()
 {
-	char str1[] = "help me";
-	char str2[] = "Hello World! It's me, help me... end this";
-	char str3[] = "help me";
-	char str4[] = "Hello World! It's me, help me... end this";
+	char str1[] = "heasdasda";
+	char str2[] = "";
+	char str3[] = "adasda";
+	char str4[] = "";
 	char *result = ft_strstr(str2, str1);
 	printf("Result: %s\n", result);
 	result = strstr(str4, str3);
