@@ -47,72 +47,78 @@ int	ft_getbaselength(char *base)
 	return (i);
 }
 
+int	checksign(char *str, int *i)
+{
+	int	sign;
+
+	*i = 0;
+	sign = 1;
+	while (str[*i] == ' ' || (str[*i] >= 9 && str[*i] <= 13))
+	{
+		++*i;
+	}
+	while (str[*i] == '+' || str[*i] == '-')
+	{
+		if (str[*i] == '-')
+			sign *= -1;
+		i++;
+	}
+	return (sign);
+}
+
+int	ft_atoi(int i, char *str, char *base, int len)
+{
+	int	j;
+	int	n;
+
+	n = 0;
+	while ((str[i] != '\0'))
+	{
+		j = 0;
+		while (base[j] != '\0')
+		{
+			if (str[i] == base[j])
+			{
+				n = n * len + j;
+				break ;
+			}
+			j++;
+		}
+		if (j == len)
+			return (0);
+		i++;
+	}
+	return (n);
+}
+
 int	ft_atoi_base(char *str, char *base)
 {
 	int	i;
 	int	n;
 	int	sign;
 	int	len;
-    int j;
 
-	i = 0;
-	n = 0;
-	sign = 1;
 	if (! check_base(base))
 		return (0);
 	len = ft_getbaselength(base);
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
-	{
-		++i;
-	}
-	while (str[i] == '+' || str[i] == '-')
-	{
-		if (str[i] == '-')
-			sign *= -1;
-		i++;
-	}
-
-    //Percorrer a string
-	while ((str[i] != '\0'))
-	{   
-        j = 0;
-        //Percorer a base
-		while (base[j] != '\0')
-        {
-            //Encontrar o caracter atual na base
-            if (str[i] == base[j])
-            {
-                //somar ao resultado ja calculado com result = result * len + j;
-			    n = n * len + j;
-                break ;
-            }
-            j++;
-        }
-        //se nao encontrei na base
-        if(j == len)
-        {
-            //Erro
-            return (0);
-        }
-		i++;
-	}
+	sign = checksign(str, &i);
+	n = ft_atoi(i, str, base, len);
 	return (sign * n);
 }
 
-// int main()
-// {
-//     char *str = "ff";
-//     char *bdec = "0123456789";
-//     char *bbin = "01";
-//     char *bhex = "0123456789abcdef";
-//     char *boct = "poneyvif";
-	
-// 	long int rslt = ft_atoi_base(str, bhex);
-// 	printf("%ld\n", rslt);
-// 	rslt = ft_atoi_base(str, bbin);
-// 	printf("%ld\n", rslt);
-// 	rslt = ft_atoi_base(str, bdec);
-// 	printf("%ld\n", rslt);
-// 	rslt = ft_atoi_base(str, boct);
-// 	printf("%ld\n", rslt);
-// }
+/*int main()
+{
+    char *str = "ff";
+    char *bdec = "0123456789";
+    char *bbin = "01";
+    char *bhex = "0123456789abcdef";
+    char *boct = "poneyvif";
+	long int rslt = ft_atoi_base(str, bhex);
+	printf("%ld\n", rslt);
+	rslt = ft_atoi_base(str, bbin);
+	printf("%ld\n", rslt);
+	rslt = ft_atoi_base(str, bdec);
+	printf("%ld\n", rslt);
+	rslt = ft_atoi_base(str, boct);
+	printf("%ld\n", rslt);
+}*/
