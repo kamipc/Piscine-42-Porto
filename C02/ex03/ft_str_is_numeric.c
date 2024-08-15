@@ -29,21 +29,13 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-/*int main()
+/*int main(int ac, char **av)
 {
-    char str[] = "helloworld";
-    char str2[] = "HELLOWORLD";
-    char str3[] = "H3ll0 W0rld!";
-    char str4[] = "1234567";
-    char str5[] = "";
-	int n = ft_str_is_numeric(str);
-	printf("%d\n", n);
-	n = ft_str_is_numeric(str2);
-	printf("%d\n", n);
-    n = ft_str_is_numeric(str3);
-    printf("%d\n", n);
-    n = ft_str_is_numeric(str4);
-    printf("%d\n", n);
-    n = ft_str_is_numeric(str5);
-    printf("%d\n", n);
+    if (ac < 2)
+        return(0);
+    for (int i = 1; i < ac; i++)
+    {
+        printf("%d\n", ft_str_is_numeric(av[i]));
+    }
+    return(0);
 }*/

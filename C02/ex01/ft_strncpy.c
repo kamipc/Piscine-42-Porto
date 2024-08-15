@@ -10,7 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+void	ft_putstr(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		write (1, &str[i], 1);
+		i++;
+	}
+}
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
@@ -30,13 +43,15 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-/*int main(void)
+/*int main(int ac, char **av)
 {
-	char	src[] = "Hello";
-    	printf ("%s\n", src);
-	char	dest[6] = {'a','a','a','a','a'};
-	int n = 3;
-	ft_strncpy(dest, src, n);
-	printf ("%s", dest);
+	if (ac > 4 || ac < 2)
+	{
+		ft_putstr("Invalid ammount of arguments.\n");
+		return (0);
+	}
+	int n = atoi(av[ac - 1]);
+	char *result = ft_strncpy(av[ac - 3],av[ac - 2], n);
+	ft_putstr(&result[0]);
 	return (0);
 }*/

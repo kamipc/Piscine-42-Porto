@@ -37,10 +37,13 @@ char	*ft_strcapitalize(char *str)
 	return(str);
 }
 
-/*int main()
+/*int main(int ac, char **av)
 {
-	char str[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
-	printf("%s\n", str);
-	ft_strcapitalize(&str[0]);
-	printf("%s", str);
+	if (ac < 2)
+		return(0);
+	for (int i = 1; i < ac; i++)
+	{
+		printf("%s\n", ft_strcapitalize(av[i]));
+	}
+	return(0);
 }*/

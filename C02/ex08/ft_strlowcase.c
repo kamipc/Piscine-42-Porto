@@ -29,10 +29,13 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-/*int main()
-{ 
-	char str[] = "What am I doing with my life";
-	char *finalstr = ft_strlowcase(str);
-	printf("%s", finalstr);
+int main(int ac, char **av)
+{
+	if (ac < 2)
+		return(0);
+	for (int i = 1; i < ac; i++)
+	{
+		printf("%s\n", ft_strlowcase(av[i]));
+	}
 	return(0);
-}*/
+}
