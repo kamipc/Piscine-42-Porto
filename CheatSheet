@@ -2,6 +2,7 @@ ssh-keygen	create a key
 
 		~~~~~~~~~~~~~~~~~~   Shell   ~~~~~~~~~~~~~~~~~~
 
+ncdu 		shows how much space is being occupied by every directory and file
 cd ~/.ssh	where the key is located
 ls		lists everyhing in a directory
 ls -l 		same but showing more info
