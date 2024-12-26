@@ -7,14 +7,15 @@ There were 10 exercises in total, from 00 to 09.
 
 `ex00` : Create a file called z that returns "Z", followed by a new line, whenever the command cat is used on it.
 
-`ex01` : Create a file called testShell00 in your submission directory. 
-The output must look like so after using `ls -l`
+`ex01` : Create a file called testShell00 in your submission directory.
+  The output must look like so after using `ls -l` . 
 ```s
-r--r-xr-x 1 XX XX 40 Jun 1 23:42 testShell00
+-r--r-xr-x 1 XX XX 40 Jun 1 23:42 testShell00
 ```
-Once you’ve achieved the previous steps, execute the following command to create
-the file to be submitted: tar -cf testShell00.tar testShell00
+  Once you’ve achieved the previous steps, execute the following command to create
+  the file to be submitted: `tar -cf testShell00.tar testShell00`.
 
+`ex02` : 
 
 
 
