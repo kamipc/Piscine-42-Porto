@@ -1,6 +1,7 @@
 # Project C03
 
-There were 6 exercises, from 00 to 05. I tried all but 05 I had given up on it after some tries.
+There were 6 exercises, from 00 to 05. All related to making your own version of a function that already exists.<br>
+I tried all but 05 I had given up on it after some tries.
 
 #### Exercise 00 : ft_strcmp
 Files to turn in : `ft_strcmp.c`. Allowed functions : `None`. <br>
@@ -49,7 +50,7 @@ char *ft_strstr(char *str, char *to_find);
 
 #### Exercise 05 : ft_strlcat
 Files to turn in : `ft_strlcat.c`. Allowed functions : `None`. <br>
-Reproduce the behavior of the function strlcat (`munsigned int ft_strlcat(char *dest, char *src, unsigned int size);an strlcat`).<br>
+Reproduce the behavior of the function strlcat (`man strlcat`).<br>
 Function prototype:
 ```c
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
