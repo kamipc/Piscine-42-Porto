@@ -1,7 +1,4 @@
-Project C00.
+# Project C00.
 
+### Final Grade
 
-
-Final moulinette grade: 50%
-
-  From ex00 to ex08 got correct till ex04.
