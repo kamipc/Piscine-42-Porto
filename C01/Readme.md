@@ -1,6 +1,6 @@
 # Project C01
 
-There were 9 exercises, from 00 to 08. I did from 00 to 07
+There were 9 exercises, from 00 to 08. I did from 00 to 07. 08 I did after so its not graded by moulinette.
 
 #### Exercise 00 : ft_ft
 Files to turn in : `ft_ft.c` .Allowed functions : `None`. <br>
@@ -80,6 +80,16 @@ Function Prototype:
 void ft_rev_int_tab(int *tab, int size);
 ```
 [ex07/ft_rev_int_tab.c](ex07/ft_rev_int_tab.c)
+
+#### Exercise 08 : ft_sort_int_tab
+Files to turn in : `ft_sort_int_tab.c`. Allowed functions : `None`. <br>
+Create a function which sorts an array of integers by ascending order.
+The arguments are a pointer to int and the number of ints in the array. <br>
+Function Prototype:
+```c
+void ft_sort_int_tab(int *tab, int size);
+```
+[ex08/ft_sort_int_tab.c](ex08/ft_sort_int_tab.c)
 
 ### Final Grade
 
