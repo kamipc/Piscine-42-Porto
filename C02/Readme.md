@@ -1,6 +1,6 @@
 # Project C02
 
-There were 13 exercises, from 00 to 12. I did from 00 to 09.
+There were 13 exercises, from 00 to 12. I did from 00 to 11.
 
 #### Exercise 00 : ft_strcpy
 Files to turn in : `ft_strcpy.c`. Allowed functions : `None`. <br>
@@ -110,6 +110,34 @@ Becomes:
 Salut, Comment Tu Vas ? 42mots Quarante-Deux; Cinquante+Et+Un
 ```
 [ex09/ft_strcapitalize.c](ex09/ft_strcapitalize.c)
+
+#### Exercise 10 : ft_strlcpy
+Files to turn in : `ft_strlcpy.c`. Allowed functions : `None`. <br>
+Reproduce the behavior of the function strlcpy (man strlcpy).<br>
+Function prototype:
+```c
+unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+```
+[ex10/ft_strlcpy.c](ex10/ft_strlcpy.c)
+
+#### Exercise 11 : ft_putstr_non_printable
+Files to turn in : `ft_putstr_non_printable.c`. Allowed functions : `write`. <br>
+Create a function that displays a string of characters onscreen. If this string con-
+tains characters that aren’t printable, they’ll have to be displayed in the shape of
+hexadecimals (lowercase), preceeded by a "backslash".<br>
+Function prototype:
+```c
+void ft_putstr_non_printable(char *str);
+```
+For example:
+```
+Coucou\ntu vas bien ?
+```
+Becomes:
+```
+Coucou\0atu vas bien ?
+```
+[ex11/ft_putstr_non_printable.c](ex11/ft_putstr_non_printable.c)
 
 ### Final Grade
 
