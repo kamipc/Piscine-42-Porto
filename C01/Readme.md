@@ -1,6 +1,6 @@
 # Project C01
 
-There were 9 exercises, from 00 to 08. I did from 00 to 07. 08 I did after so its not graded by moulinette.
+There were 9 exercises, from 00 to 08. I did all but 08 I did after so its not graded by moulinette.
 
 #### Exercise 00 : ft_ft
 Files to turn in : `ft_ft.c` .Allowed functions : `None`. <br>
