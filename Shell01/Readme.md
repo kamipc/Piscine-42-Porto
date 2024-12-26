@@ -7,6 +7,7 @@ I did 01 to 05. ex00 was just a reminder to sign up to the exam.
 Write a command line that will display the list of groups for which the login,
 contained in the environment variable `FT_USER` , is a member. Separated by
 commas without spaces. Name of file to deliver `print_groups.sh`.
+[ex01/print_groups.sh](ex01/print_groups.sh)
 
 #### Exercise 02: find_sh
 Write a command line that searches for all file names that end with ".sh" (without
@@ -21,15 +22,18 @@ file2$
 file3$
 $>
 ```
+[ex02/find_sh.sh](ex02/find_sh.sh)
 
 #### Exercise 03: count_files
 Write a command line that counts and displays the number of regular files and
 directories in the current directory and all its sub-directories. It should include ".",
 the starting directory. Name of file to deliver `count_files.sh`.
+[ex03/count_files.sh](ex03/count_files.sh)
 
 #### Exercise 04: MAC
 Write a command line that displays your machine’s MAC addresses. Each address
 must be followed by a line break. Name of file to deliver `MAC.sh`. 
+[ex04/MAC.sh](ex04/MAC.sh)
 
 #### Exercise 05: Can you create it ?
 Create a file containing only "42", and NOTHING else. Name of file to deliver `"\?$*'MaRViN'*$?\"`.
@@ -38,6 +42,7 @@ $>ls -lRa *MaRV* | cat -e
 -rw---xr-- 1 75355 32015 2 Oct 2 12:21 "\?$*'MaRViN'*$?\"$
 $>
 ```
+[ex05/"\?$*'MaRViN'*$?\"](ex05/"\?$*'MaRViN'*$?\")
 
 ### Final Grade
 
