@@ -1,4 +1,6 @@
 # Piscine-42-Porto
-A repository to file my progress in the piscine and all the projects I made.
+A repository to file my progress in the piscine and all the projects I made. <br>
 
-The first 2 projects are Shell related, the next ones are done on C.
+There were 2 individual projects in `Shell`, 13 individual projects in `C`.<br>
+4 `Rush` projects, which are done in groups. And 4 `Exams`.
+
