@@ -42,7 +42,7 @@ $>ls -lRa *MaRV* | cat -e
 -rw---xr-- 1 75355 32015 2 Oct 2 12:21 "\?$*'MaRViN'*$?\"$
 $>
 ```
-[ex05/"\?$*'MaRViN'*$?\"](ex05/"\?$*'MaRViN'*$?\")
+[ex05/%5C%3F%24%2A%27MaRViN%27%2A%24%3F%5C](ex05/"\?$*'MaRViN'*$?\")
 
 ### Final Grade
 
