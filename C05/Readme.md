@@ -70,3 +70,19 @@ Function prototype:
 int ft_sqrt(int nb)
 ```
 [ex05/ft_sqrt.c](ex05/ft_sqrt.c)
+
+#### Exercise 06 : ft_is_prime
+Files to turn in : `ft_is_prime.c`. Allowed functions : `None`. <br>
+Create a function that returns `1` if the number given as a parameter is a prime
+number, and `0` if it isn’t. <br>
+Function prototype:
+```c
+int ft_is_prime(int nb);
+```
+[ex06/ft_is_prime.c](ex06/ft_is_prime.c)
+
+### Final Grade
+
+![image](https://github.com/user-attachments/assets/6875d37d-ad0e-46ad-8886-6983ce79d7d2)
+
+![image](https://github.com/user-attachments/assets/ebc55a78-bfaf-4bdf-a805-8ec4c5819a9f)
