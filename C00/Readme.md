@@ -2,7 +2,7 @@
 
 In this project we will start learning how to program in `C`. There were 9 exercises, from 00 to 08. I did from 00 to 07.
 
-#### ex00
+#### Exercice 00: ft_putchar
 Files to turn in : `ft_putchar.c`. Allowed functions : `write`.<br>
 Write a function that displays the `character` passed as a parameter. <br>
 Function prototype: 
@@ -11,7 +11,7 @@ void ft_putchar(char c);
 ```
 [ex00/ft_putchar.c](ex00/ft_putchar.c)
 
-#### ex01
+#### Exercise 01: ft_print_alphabet
 Files to turn in : `ft_print_alphabet.c`. Allowed functions : `write`.<br>
 Create a function that displays the `alphabet` in lowercase, on a single line, by
 ascending order, starting from the letter `a`.<br>
@@ -21,7 +21,7 @@ void ft_print_alphabet(void);
 ```
 [ex01/ft_print_alphabet.c](ex01/ft_print_alphabet.c)
 
-#### ex02
+#### Exercise 02: ft_print_reverse_alphabet
 Files to turn in : `ft_print_reverse_alphabet.c`. Allowed functions : `write`.<br>
 Create a function that displays the `alphabet` in lowercase, on a single line, by
 descending order, starting from the letter `z`.<br>
@@ -31,7 +31,7 @@ void ft_print_reverse_alphabet(void);
 ```
 [ex02/ft_print_reverse_alphabet.c](ex02/ft_print_reverse_alphabet.c)
 
-#### ex03
+#### Exercise 03: ft_print_numbers
 Files to turn in : `ft_print_numbers.c` . Allowed functions : `write`.<br>
 Create a function that displays `all digits`, on a single line, by ascending order.<br>
 Function prototype:
@@ -40,7 +40,7 @@ void ft_print_numbers(void);
 ```
 [ex03/ft_print_numbers.c](ex03/ft_print_numbers.c)
 
-#### ex04
+#### Exercise 04: ft_is_negative
 Files to turn in : `ft_is_negative.c`. Allowed functions : `write`.<br>
 Create a function that displays `N` or `P` depending on the integer’s sign entered
 as a parameter. If n is negative, display `N`. If n is positive or null, display `P`.<br>
@@ -50,7 +50,7 @@ void ft_is_negative(int n);
 ```
 [ex04/ft_is_negative.c](ex04/ft_is_negative.c)
 
-#### ex05
+#### Exercise 05: ft_print_comb
 Files to turn in : `ft_print_comb.c`. Allowed functions : `write`.<br>
 Create a function that displays all different combinations of three different digits in
 ascending order, listed by ascending order - yes, repetition is voluntary.<br>
@@ -66,7 +66,7 @@ void ft_print_comb(void);
 ```
 [ex05/ft_print_comb.c](ex05/ft_print_comb.c)
 
-#### ex06
+#### Exercise 06: ft_print_comb2
 Files to turn in : `ft_print_comb2.c` . Allowed functions : `write`. <br>
 Create a function that displays all different combination of two two digits numbers
 (XX XX) between 00 and 99, listed by ascending order. <br>
@@ -81,7 +81,7 @@ void ft_print_comb2(void);
 ```
 [ex06/ft_print_comb2.c](ex06/ft_print_comb2.c)
 
-#### ex07
+#### Exercise 07: ft_putnbr
 Files to turn in : `ft_putnbr.c`. Allowed functions : `write`. <br>
 Create a function that displays the number entered as a parameter. The function
 has to be able to display all possible values within an `int` type variable. <br>
