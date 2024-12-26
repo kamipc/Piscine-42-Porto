@@ -6,7 +6,7 @@ I did 01 to 05. ex00 was just a reminder to sign up to the exam.
 #### Exercise 01: print_groups
 Write a command line that will display the list of groups for which the login,
 contained in the environment variable `FT_USER` , is a member. Separated by
-commas without spaces. Name of file to deliver `print_groups.sh`.
+commas without spaces. Name of file to deliver `print_groups.sh`.<br>
 [ex01/print_groups.sh](ex01/print_groups.sh)
 
 #### Exercise 02: find_sh
@@ -27,12 +27,12 @@ $>
 #### Exercise 03: count_files
 Write a command line that counts and displays the number of regular files and
 directories in the current directory and all its sub-directories. It should include ".",
-the starting directory. Name of file to deliver `count_files.sh`.
+the starting directory. Name of file to deliver `count_files.sh`.<br>
 [ex03/count_files.sh](ex03/count_files.sh)
 
 #### Exercise 04: MAC
 Write a command line that displays your machine’s MAC addresses. Each address
-must be followed by a line break. Name of file to deliver `MAC.sh`. 
+must be followed by a line break. Name of file to deliver `MAC.sh`. <br>
 [ex04/MAC.sh](ex04/MAC.sh)
 
 #### Exercise 05: Can you create it ?
