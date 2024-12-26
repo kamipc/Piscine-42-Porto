@@ -9,6 +9,7 @@ Function prototype:
 ```c
 void ft_putchar(char c);
 ```
+[ex00/ft_putchar.c](ex00/ft_putchar.c)
 
 #### ex01
 Files to turn in : `ft_print_alphabet.c`. Allowed functions : `write`.<br>
