@@ -21,6 +21,9 @@ Function prototype:
 ```c
 void ft_putstr(char *str);
 ```
+```
+Yes! The same one from project C01 ex05...
+```
 [ex01/ft_putstr.c](ex01/ft_putstr.c)
 
 #### Exercise 02 : ft_putnbr
