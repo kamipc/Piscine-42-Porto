@@ -19,6 +19,7 @@ Function prototype:
 ```c
 void ft_print_alphabet(void);
 ```
+[ex01/ft_print_alphabet.c](ex01/ft_print_alphabet.c)
 
 #### ex02
 Files to turn in : `ft_print_reverse_alphabet.c`. Allowed functions : `write`.<br>
@@ -28,6 +29,7 @@ Function prototype:
 ```c
 void ft_print_reverse_alphabet(void);
 ```
+[ex02/ft_print_reverse_alphabet.c](ex02/ft_print_reverse_alphabet.c)
 
 #### ex03
 Files to turn in : `ft_print_numbers.c` . Allowed functions : `write`.<br>
@@ -36,6 +38,7 @@ Function prototype:
 ```c
 void ft_print_numbers(void);
 ```
+[ex03/ft_print_numbers.c](ex03/ft_print_numbers.c)
 
 #### ex04
 Files to turn in : `ft_is_negative.c`. Allowed functions : `write`.<br>
@@ -45,6 +48,7 @@ Function prototype:
 ```c
 void ft_is_negative(int n);
 ```
+[ex04/ft_is_negative.c](ex04/ft_is_negative.c)
 
 #### ex05
 Files to turn in : `ft_print_comb.c`. Allowed functions : `write`.<br>
@@ -60,6 +64,7 @@ Function prototype:
 ```c
 void ft_print_comb(void);
 ```
+[ex05/ft_print_comb.c](ex05/ft_print_comb.c)
 
 #### ex06
 Files to turn in : `ft_print_comb2.c` . Allowed functions : `write`. <br>
@@ -74,6 +79,7 @@ Function prototype:
 ```c
 void ft_print_comb2(void);
 ```
+[ex06/ft_print_comb2.c](ex06/ft_print_comb2.c)
 
 #### ex07
 Files to turn in : `ft_putnbr.c`. Allowed functions : `write`. <br>
@@ -83,6 +89,7 @@ Function prototype:
 ```c
 void ft_putnbr(int nb);
 ```
+[ex07/ft_putnbr.c](ex07/ft_putnbr.c)
 
 ### Final Grade
 
