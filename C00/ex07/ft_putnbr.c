@@ -35,7 +35,7 @@ void	ft_putnbr(int nb)
 		ft_putchar(n + '0');
 }
 
-int main(int ac, char **av)
+/*int main(int ac, char **av)
 {
 	int	i = 1;
 
@@ -47,4 +47,4 @@ int main(int ac, char **av)
 		i++;
 	}
 	return;
-}
+}*/
